@@ -1,0 +1,18 @@
+services:
+- type: web
+  name: tg-art-bot
+  runtime: python
+  envVars:
+    - key: BOT_TOKEN
+      fromSecret: BOT_TOKEN
+    - key: OWNER_ID
+      fromSecret: OWNER_ID
+    - key: CHANNEL_ID
+      fromSecret: CHANNEL_ID
+    - key: HF_API_KEY
+      fromSecret: HF_API_KEY
+    - key: UNSPLASH_KEY
+      fromSecret: UNSPLASH_KEY
+  buildCommand: pip install -r requirements.txt
+  startCommand: python bot.py
+  plan: free
