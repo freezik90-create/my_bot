@@ -1,0 +1,5 @@
+pytelegrambotapi
+requests
+apscheduler
+flask
+Pillow
