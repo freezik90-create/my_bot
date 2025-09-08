@@ -1,5 +1,5 @@
 # bot.py
-import telebot
+from telebot import InlineKeyboardMarkup, InlineKeyboardButton
 import requests
 import random
 import json
@@ -381,3 +381,4 @@ if __name__ == "__main__":
 
         print("✅ Бот запущен")
         bot.infinity_polling()
+
